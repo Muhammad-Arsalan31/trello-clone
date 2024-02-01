@@ -1,17 +1,17 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { Medal } from "lucide-react";
-import localFont from "next/font/local";
-import Link from "next/link";
-import { Poppins } from "next/font/google";
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+import { Medal } from 'lucide-react';
+import localFont from 'next/font/local';
+import Link from 'next/link';
+import { Poppins } from 'next/font/google';
 
 const headingFont = localFont({
-  src: "../../public/fonts/font.woff2",
+  src: '../../public/fonts/font.woff2',
 });
 
 const textFont = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export default function MarketingPage() {
@@ -43,7 +43,7 @@ export default function MarketingPage() {
         accomplish it all with Taskify.
       </div>
       <Button className="mt-6" size="lg" asChild>
-        <Link href="/">Get taskify for free</Link>
+        <Link href="/sign-up">Get taskify for free</Link>
       </Button>
     </div>
   );
